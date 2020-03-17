@@ -32,7 +32,7 @@ Ova aplikacija automatizira rad turističkih agencija omogućavajuci korisnicima
 	- dodavanje i brisanje kodova za popuste
 	- azuriranje informacija o agenciji, uslova putovanja i kontakta 
 	
-##Akteri
+## Akteri
  * Gost
  * Korisnik
  * Administrator
