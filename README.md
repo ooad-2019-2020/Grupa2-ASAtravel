@@ -1,6 +1,5 @@
 # Grupa2-SolAzur
-Tema: Turistička agencija
-Naziv: ASA Travel
+Tema: Turistička agencija ASA Travel
 
 ![logo](https://github.com/ooad-2019-2020/Grupa2-SolAzur/blob/master/asaTravel.png)
 
