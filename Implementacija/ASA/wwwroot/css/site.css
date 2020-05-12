@@ -59,8 +59,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('https://i2.wp.com/background4free.com/download/sky_blue_daytime_1926285395.jpg?q=100');
 }
 .footer {
   position: absolute;
