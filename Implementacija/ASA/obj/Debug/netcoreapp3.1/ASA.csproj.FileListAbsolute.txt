@@ -354,3 +354,4 @@ C:\Users\user1\source\repos\ooad-2019-2020\Grupa2-ASAtravel\Implementacija\ASA\o
 C:\Users\user1\source\repos\ooad-2019-2020\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.dll
 C:\Users\user1\source\repos\ooad-2019-2020\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.pdb
 C:\Users\user1\source\repos\ooad-2019-2020\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.genruntimeconfig.cache
+C:\Users\user1\source\repos\ooad-2019-2020\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Putovanja.cshtml.g.cs

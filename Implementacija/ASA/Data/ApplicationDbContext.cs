@@ -13,6 +13,6 @@ namespace authTest.Data
             : base(options)
         {
         }
-        public DbSet<authTest.Models.Agencija> Agencija { get; set; }
+      //  public DbSet<authTest.Models.Agencija> Agencija { get; set; }
     }
 }

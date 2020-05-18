@@ -14,6 +14,7 @@ namespace authTest.Models
         public string MjestoStanovanja { get; set; }
         public string Email { get; set; }
         public virtual ICollection<Putovanje> Putovanja { get; set; }
+        public int RacunId { get; set; }
         public virtual Racun Racun { get; set; }
 
     }

@@ -11,7 +11,6 @@ namespace authTest.Models
         public string BrojRacuna { get; set; }
         public double IznosNovca { get; set; }
 
-        public virtual Korisnik Vlasnik { get; set; }
 
     }
 }

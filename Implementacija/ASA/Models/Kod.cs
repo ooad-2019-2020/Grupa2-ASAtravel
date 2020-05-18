@@ -11,6 +11,7 @@ namespace authTest.Models
         public string Sifra { get; set; }
         public int Popust { get; set; }
         public int AgencijaId { get; set; }
+        public virtual Agencija Agencija { get; set; }
 
         public Kod(string sifra, int popust)
         {

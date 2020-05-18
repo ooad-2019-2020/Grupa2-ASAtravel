@@ -16,6 +16,7 @@ namespace authTest.Models
         public DateTime DatumPovratka { get; set; }
         public int MinBrojLjudi { get; set; }
         public int MaxBrojLjudi { get; set; }
+        public int CijenaId { get; set; }
         public virtual Cijena Cijena { get; set; }
         public virtual ICollection<Korisnik> Putnici { get; set; }
 

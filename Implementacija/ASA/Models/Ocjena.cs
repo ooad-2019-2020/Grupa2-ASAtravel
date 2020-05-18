@@ -11,7 +11,9 @@ namespace authTest.Models
         public int BrojOcjena { get; set; }
         public double Prosjek { get; set; }
         public int KorisnikId { get; set; }
+        public virtual Korisnik Korisnik { get; set; }
         public int PutovanjeId { get; set; }
+        public virtual Putovanje Putovanje { get; set; }
 
         public Ocjena(int brojOcjena, double prosjek)
         {

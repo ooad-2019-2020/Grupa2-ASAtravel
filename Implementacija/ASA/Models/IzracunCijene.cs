@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace authTest.Models
 {
-    interface IzracunCijene
+    interface IIzracunCijene
     {
     }
 }
