@@ -516,7 +516,6 @@ C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcor
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Putovanja.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -537,3 +536,10 @@ C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp3.1\System.Reactive.dll
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Create.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Delete.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Details.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Edit.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Index.cshtml.g.cs

@@ -12,7 +12,7 @@ namespace authTest.Models
         public Klijent Klijent { get; set; }
         public int PutovanjeId { get; set; }
         public Putovanje Putovanje { get; set; }
-        public int KodId { get; set; }
+        public int? KodId { get; set; }
         public Kod Kod { get; set; }
         public double Cijena { get; set; }
 
