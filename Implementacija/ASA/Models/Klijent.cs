@@ -17,5 +17,8 @@ namespace authTest.Models
         public int RacunId { get; set; }
         public virtual Racun Racun { get; set; }
 
+        public Klijent()
+        {
+        }
     }
 }

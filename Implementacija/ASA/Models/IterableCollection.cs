@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace authTest.Models
+namespace ASA.Models
 {
-    interface IPrototype
+    interface IterableCollection
     {
-        void clone() { }
+       public void createIterator() {}
     }
 }

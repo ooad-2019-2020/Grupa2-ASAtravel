@@ -148,9 +148,6 @@ C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.csprojAssemblyReference.cache
-C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.RazorAssemblyInfo.cache
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.RazorAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.AssemblyInfoInputs.cache
@@ -534,3 +531,4 @@ C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcor
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.dll
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.pdb
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Putovanja.cshtml.g.cs

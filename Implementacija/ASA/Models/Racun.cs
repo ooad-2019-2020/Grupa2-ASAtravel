@@ -11,6 +11,8 @@ namespace authTest.Models
         public string BrojRacuna { get; set; }
         public double IznosNovca { get; set; }
 
-
+        public Racun()
+        {
+        }
     }
 }

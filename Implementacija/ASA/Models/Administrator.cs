@@ -7,6 +7,6 @@ namespace authTest.Models
 {
     public class Administrator : Korisnik
     {
-
+        public Administrator() { }
     }
 }

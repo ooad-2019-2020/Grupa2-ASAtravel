@@ -20,5 +20,9 @@ namespace authTest.Models
             BrojOcjena = brojOcjena;
             Prosjek = prosjek;
         }
+
+        public Ocjena()
+        {
+        }
     }
 }

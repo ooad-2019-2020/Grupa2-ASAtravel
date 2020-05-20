@@ -7,5 +7,6 @@ namespace authTest.Models
 {
     interface IObserver
     {
+      public void upadate() { }
     }
 }

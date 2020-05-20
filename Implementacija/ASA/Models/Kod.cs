@@ -18,5 +18,9 @@ namespace authTest.Models
             Sifra = sifra;
             Popust = popust;
         }
+        public Kod()
+        {
+
+        }
     }
 }

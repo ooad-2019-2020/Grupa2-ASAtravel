@@ -10,7 +10,7 @@ namespace authTest.Models
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public int? AgencijaId { get; set; }
+        public int AgencijaId { get; set; }
         public virtual Agencija Agencija { get; set; }
 
         protected Korisnik(string username, string password)

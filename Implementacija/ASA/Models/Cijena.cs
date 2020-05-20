@@ -16,5 +16,9 @@ namespace authTest.Models
             PunaCijena = punaCijena;
             Akontacija = akontacija;
         }
+
+        public Cijena()
+        {
+        }
     }
 }
