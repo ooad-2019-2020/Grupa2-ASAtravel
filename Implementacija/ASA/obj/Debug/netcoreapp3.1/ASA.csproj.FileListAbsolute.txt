@@ -543,3 +543,8 @@ C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcor
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Details.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Edit.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Administrator\Index.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Create.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Delete.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Details.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Edit.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Index.cshtml.g.cs
