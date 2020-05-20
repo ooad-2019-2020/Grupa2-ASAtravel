@@ -2,18 +2,13 @@
 
 namespace ASA.Migrations
 {
-    public partial class itter : Migration
+    public partial class F : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
-        {
-        }
-
-        protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<int>(
                 name: "IteratorId",
                 table: "Agencija",
-                type: "int",
                 nullable: true);
 
             migrationBuilder.CreateIndex(
@@ -28,6 +23,21 @@ namespace ASA.Migrations
                 principalTable: "Iterator",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Agencija_Iterator_IteratorId",
+                table: "Agencija");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Agencija_IteratorId",
+                table: "Agencija");
+
+            migrationBuilder.DropColumn(
+                name: "IteratorId",
+                table: "Agencija");
         }
     }
 }

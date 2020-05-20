@@ -19,7 +19,8 @@ namespace authTest.Models
         public string Naziv { get; set; }
         public string UsloviPutovanja { get; set; }
         public virtual Racun Racun { get; set; }
-     //   public Iterator Iterator { get; set; }
+     
+        public Iterator Iterator { get; set; }
         
         public Agencija()
         {

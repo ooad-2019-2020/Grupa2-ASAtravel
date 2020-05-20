@@ -10,8 +10,8 @@ using authTest.Models;
 namespace ASA.Migrations
 {
     [DbContext(typeof(ASAContext))]
-    [Migration("20200520154716_itter")]
-    partial class itter
+    [Migration("20200520163605_Nov")]
+    partial class Nov
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,6 +31,9 @@ namespace ASA.Migrations
                     b.Property<string>("Info")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("IteratorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Naziv")
                         .HasColumnType("nvarchar(max)");
 
@@ -41,6 +44,8 @@ namespace ASA.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IteratorId");
 
                     b.HasIndex("RacunId");
 
@@ -306,6 +311,10 @@ namespace ASA.Migrations
 
             modelBuilder.Entity("authTest.Models.Agencija", b =>
                 {
+                    b.HasOne("authTest.Models.Iterator", "Iterator")
+                        .WithMany()
+                        .HasForeignKey("IteratorId");
+
                     b.HasOne("authTest.Models.Racun", "Racun")
                         .WithMany()
                         .HasForeignKey("RacunId");
