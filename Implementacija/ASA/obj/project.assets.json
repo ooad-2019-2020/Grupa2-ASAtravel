@@ -8951,11 +8951,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\source\\repos\\ooad-2019-2020\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Source\\Repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
       "projectName": "ASA",
-      "projectPath": "C:\\Users\\user1\\source\\repos\\ooad-2019-2020\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
+      "projectPath": "C:\\Users\\user1\\Source\\Repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\source\\repos\\ooad-2019-2020\\Grupa2-ASAtravel\\Implementacija\\ASA\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Source\\Repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",

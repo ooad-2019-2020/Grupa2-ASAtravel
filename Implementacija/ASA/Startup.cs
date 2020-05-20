@@ -29,7 +29,7 @@ namespace authTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ASAContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DbConnection")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
