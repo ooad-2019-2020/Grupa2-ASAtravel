@@ -1,0 +1,42 @@
+﻿@model authTest.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Klijent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Klijent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Putovanje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Putovanje.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kod)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kod.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cijena)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
