@@ -57,6 +57,7 @@ namespace ASA.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 _context.Add(putovanje);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

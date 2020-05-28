@@ -31,7 +31,7 @@ namespace authTest.Models
         [Range(minimum: 200, maximum: 300, ErrorMessage = "Broj putnika mora biti u intervalu od 200 do 300")]
 
         public int MaxBrojLjudi { get; set; }
-        public virtual Cijena Cijena { get; set; }
+        public double Cijena { get; set; }
         public virtual ICollection<Korisnik> Putnici { get; set; }
   
         public Putovanje()

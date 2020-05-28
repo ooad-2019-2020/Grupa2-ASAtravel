@@ -181,8 +181,8 @@ namespace ASA.Migrations
                     b.Property<bool>("Aktuelno")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("CijenaId")
-                        .HasColumnType("int");
+                    b.Property<double>("Cijena")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("DatumPolaska")
                         .HasColumnType("datetime2");
@@ -211,8 +211,6 @@ namespace ASA.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AgencijaId");
-
-                    b.HasIndex("CijenaId");
 
                     b.HasIndex("KlijentId");
 
@@ -360,10 +358,6 @@ namespace ASA.Migrations
                     b.HasOne("authTest.Models.Agencija", null)
                         .WithMany("Kodovi")
                         .HasForeignKey("AgencijaId");
-
-                    b.HasOne("authTest.Models.Cijena", "Cijena")
-                        .WithMany()
-                        .HasForeignKey("CijenaId");
 
                     b.HasOne("authTest.Models.Klijent", null)
                         .WithMany("Putovanja")

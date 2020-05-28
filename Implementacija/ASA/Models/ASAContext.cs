@@ -41,5 +41,8 @@ namespace authTest.Models
  
         //Ova funkcija se koriste da bi se ukinulo automatsko dodavanje množine u nazive
         public DbSet<authTest.Models.Cijena> Cijena { get; set; }
+ 
+        //Ova funkcija se koriste da bi se ukinulo automatsko dodavanje množine u nazive
+        public DbSet<authTest.Models.Klijent> Klijent { get; set; }
     }
 }
