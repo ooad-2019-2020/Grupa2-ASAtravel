@@ -17,7 +17,10 @@ namespace authTest.Controllers
         {
             _logger = logger;
         }*/
-
+       public IActionResult Infos()
+        {
+            return View("~/Views/Agencija/Index.cshtml");
+        }
         public IActionResult Index()
         {
             return View();

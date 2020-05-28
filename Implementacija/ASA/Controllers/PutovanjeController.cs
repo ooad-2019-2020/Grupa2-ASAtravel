@@ -53,7 +53,7 @@ namespace ASA.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Slika,Destinacija,Info,Aktuelno,DatumPolaska,DatumPovratka,MinBrojLjudi,MaxBrojLjudi")] Putovanje putovanje)
+        public async Task<IActionResult> Create([Bind("Id,Slika,Destinacija,Info,Aktuelno,DatumPolaska,DatumPovratka,MinBrojLjudi,MaxBrojLjudi,Cijena")] Putovanje putovanje)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ASA.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Slika,Destinacija,Info,Aktuelno,DatumPolaska,DatumPovratka,MinBrojLjudi,MaxBrojLjudi")] Putovanje putovanje)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Slika,Destinacija,Info,Aktuelno,DatumPolaska,DatumPovratka,MinBrojLjudi,MaxBrojLjudi,Cijena")] Putovanje putovanje)
         {
             if (id != putovanje.Id)
             {
