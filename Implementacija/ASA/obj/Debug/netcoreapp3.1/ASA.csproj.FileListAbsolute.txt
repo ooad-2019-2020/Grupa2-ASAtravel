@@ -568,3 +568,4 @@ C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcor
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Agencija\Edit.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Agencija\Index.cshtml.g.cs
 C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Agencija\Details.cshtml.g.cs
+C:\Users\user1\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Home\OAgenciji.cshtml.g.cs

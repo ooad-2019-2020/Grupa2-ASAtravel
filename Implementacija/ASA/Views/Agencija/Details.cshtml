@@ -1,36 +1,22 @@
 ﻿@model authTest.Models.Agencija
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Informacije o agenciji";
 }
 
-<h1>Details</h1>
+<h1 style="margin-left:25%">Informacije o agenciji</h1>
 
-<div>
-    <h4>Agencija</h4>
+<div style="margin-left:25%">
     <hr />
-    <dl class="row">
+    <dl class="row" >
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Info)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Info)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Naziv)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Naziv)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UsloviPutovanja)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UsloviPutovanja)
-        </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div style="margin-left:25%">
+    <a asp-action="Edit" asp-route-id="@Model.Id">Izmijeni</a>
 </div>

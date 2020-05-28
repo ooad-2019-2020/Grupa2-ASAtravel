@@ -1,66 +1,71 @@
 ﻿@model authTest.Models.Putovanje
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalji ponude";
 }
 
-<h1>Details</h1>
+    <h1 style="margin-left:20%">Detalji ponude</h1>
 
 <div>
-    <h4>Putovanje</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="row"  style="margin-left:20%" >
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.Slika)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Slika)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.Destinacija)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Destinacija)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.Info)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Info)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.Aktuelno)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Aktuelno)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.DatumPolaska)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DatumPolaska)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.DatumPovratka)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DatumPovratka)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.MinBrojLjudi)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.MinBrojLjudi)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-4" >
             @Html.DisplayNameFor(model => model.MaxBrojLjudi)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.MaxBrojLjudi)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Cijena)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cijena)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a  style="margin-left: 21%" asp-action="Edit" asp-route-id="@Model.Id">Izmijeni</a> |
+    <a  asp-action="Index">Vrati se na ponude</a>
 </div>

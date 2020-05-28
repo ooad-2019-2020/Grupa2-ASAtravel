@@ -4,25 +4,25 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Aktuelna putovanja</h1>
+<h1 style="margin-left:20%; color: darkslategrey">Aktuelna putovanja</h1>
 
 <p>
-    <a asp-action="Create">Dodaj novu ponudu</a>
+    <a style="margin-left: 2%" asp-action="Create">Dodaj novu ponudu</a>
 </p>
 <table class="table" style="float:right;  width:80%">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Slika)
-            </th>
-            <th>
+            <th style="color: darkslategrey">
                 @Html.DisplayNameFor(model => model.Destinacija)
             </th>
-            <th>
+            <th style="color: darkslategrey">
                 @Html.DisplayNameFor(model => model.DatumPolaska)
             </th>
-            <th>
+            <th style="color: darkslategrey">
                 @Html.DisplayNameFor(model => model.DatumPovratka)
+            </th>
+            <th style="color: darkslategrey">
+                @Html.DisplayNameFor(model => model.Cijena)
             </th>
             <th></th>
         </tr>
@@ -31,9 +31,6 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Slika)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Destinacija)
             </td>
             <td>
@@ -41,6 +38,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DatumPovratka)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cijena)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Izmijeni</a> |
