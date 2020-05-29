@@ -5,7 +5,7 @@
     <ul class="navbar-nav">
         @if (SignInManager.IsSignedIn(User))
         {
-            
+
             <li class="nav-item">
                 <a class="nav-link text-primary" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
             </li>
@@ -18,11 +18,13 @@
         else
         {
     <li class="nav-item">
-        <a class="nav-link text-primary" asp-area="Identity" asp-page="/Account/Register">Registracija</a>
+        @*promijenjeno iz <a class="nav-link text-primary" asp-area="Identity" asp-page="/Account/Register">Registracija</a>*@
+        <a class="nav-link text-primary" asp-controller="Klijent" asp-action="Create">Registracija</a>
     </li>
-            <li class="nav-item">
-                <a class="nav-link text-primary" asp-area="Identity" asp-page="/Account/Login">Prijava</a>
-            </li>
+    <li class="nav-item">
+        @*promijenjeno iz <a class="nav-link text-primary" asp-area="Identity" asp-page="/Account/Login">Prijava</a>*@
+        <a class="nav-link text-primary" asp-controller="Home" asp-action="Prijava">Prijava</a>
+    </li>
         }
     </ul>
 

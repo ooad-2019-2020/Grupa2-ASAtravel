@@ -23,12 +23,12 @@ namespace authTest.Models
 
         [Required(ErrorMessage = "Polje minimalni broj putnika je obavezno")]
         [Display(Name = "Maksimalan broj putnika")]
-        [Range(minimum: 10, maximum: 100, ErrorMessage = "Broj putnika mora biti u intervalu od 10 do 100")]
+        [Range(minimum: 200, maximum: 300, ErrorMessage = "Broj putnika mora biti u intervalu od 10 do 100")]
         public int MinBrojLjudi { get; set; }
 
         [Required(ErrorMessage = "Polje maximalni broj putnika je obavezno")]
         [Display(Name = "Minimalan broj putnika")]
-        [Range(minimum: 200, maximum: 300, ErrorMessage = "Broj putnika mora biti u intervalu od 200 do 300")]
+        [Range(minimum: 10, maximum: 100, ErrorMessage = "Broj putnika mora biti u intervalu od 200 do 300")]
 
         public int MaxBrojLjudi { get; set; }
         public double Cijena { get; set; }
