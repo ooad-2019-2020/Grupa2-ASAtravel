@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Delete</h1>
@@ -12,16 +13,19 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Klijent)
+        </dt>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Putovanje)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Putovanje.Destinacija)
+            @Html.DisplayFor(model => model.Putovanje.Id)
         </dd class>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Kod)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Kod.Sifra)
+            @Html.DisplayFor(model => model.Kod.Id)
         </dd class>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Cijena)

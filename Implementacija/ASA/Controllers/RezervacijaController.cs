@@ -12,6 +12,7 @@ namespace ASA.Controllers
     public class RezervacijaController : Controller
     {
         private readonly ASAContext _context;
+        private double c=0;
 
         public RezervacijaController(ASAContext context)
         {
@@ -49,9 +50,9 @@ namespace ASA.Controllers
         // GET: Rezervacija/Create
         public IActionResult Create()
         {
-            ViewData["KlijentId"] = new SelectList(_context.Set<Klijent>(), "Id", "Discriminator");
-            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id");
-            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id");
+            ViewData["KlijentId"] = new SelectList(_context.Klijent, "Id", "Username");
+            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Sifra");
+            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Destinacija");
             return View();
         }
 
@@ -60,18 +61,39 @@ namespace ASA.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,KlijentId,PutovanjeId,KodId,Cijena")] Rezervacija rezervacija)
+        public async Task<IActionResult> Create([Bind("Id,KlijentId,PutovanjeId,KodId")] Rezervacija rezervacija)
         {
             if (ModelState.IsValid)
             {
+
+                var kod = await _context.Kod
+                .FirstOrDefaultAsync(m => m.Id == rezervacija.KodId);
+
+                var put = await _context.Putovanje
+                .FirstOrDefaultAsync(m => m.Id == rezervacija.PutovanjeId);
+
+                rezervacija.Cijena = 0;
+                if (put != null && kod != null)
+                {
+                    rezervacija.Cijena = (put.Cijena * (1 - kod.Popust / 100.0));
+                }
+                
+
                 _context.Add(rezervacija);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Action));
             }
-            ViewData["KlijentId"] = new SelectList(_context.Set<Klijent>(), "Id", "Discriminator", rezervacija.KlijentId);
-            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id", rezervacija.KodId);
-            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id", rezervacija.PutovanjeId);
+            ViewData["KlijentId"] = new SelectList(_context.Set<Klijent>(), "Id", "Username", rezervacija.KlijentId);
+            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Sifra", rezervacija.KodId);
+           
+            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Destinacija", rezervacija.PutovanjeId);
             return View(rezervacija);
+        }
+
+        public async Task<IActionResult> Action()
+        {
+            ViewBag.Suza = c;
+            return View();
         }
 
         // GET: Rezervacija/Edit/5
@@ -87,7 +109,7 @@ namespace ASA.Controllers
             {
                 return NotFound();
             }
-            ViewData["KlijentId"] = new SelectList(_context.Set<Klijent>(), "Id", "Discriminator", rezervacija.KlijentId);
+            ViewData["KlijentId"] = new SelectList(_context.Klijent, "Id", "Discriminator", rezervacija.KlijentId);
             ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id", rezervacija.KodId);
             ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id", rezervacija.PutovanjeId);
             return View(rezervacija);
@@ -125,7 +147,7 @@ namespace ASA.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["KlijentId"] = new SelectList(_context.Set<Klijent>(), "Id", "Discriminator", rezervacija.KlijentId);
+            ViewData["KlijentId"] = new SelectList(_context.Klijent, "Id", "Discriminator", rezervacija.KlijentId);
             ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id", rezervacija.KodId);
             ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id", rezervacija.PutovanjeId);
             return View(rezervacija);

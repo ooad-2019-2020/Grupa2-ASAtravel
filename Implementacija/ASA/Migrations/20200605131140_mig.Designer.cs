@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using authTest.Models;
 
 namespace ASA.Migrations
 {
     [DbContext(typeof(ASAContext))]
-    partial class ASAContextModelSnapshot : ModelSnapshot
+    [Migration("20200605131140_mig")]
+    partial class mig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -300,7 +302,7 @@ namespace ASA.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("RacunId")
+                    b.Property<int>("RacunId")
                         .HasColumnType("int");
 
                     b.HasIndex("RacunId");
@@ -394,7 +396,9 @@ namespace ASA.Migrations
                 {
                     b.HasOne("authTest.Models.Racun", "Racun")
                         .WithMany()
-                        .HasForeignKey("RacunId");
+                        .HasForeignKey("RacunId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

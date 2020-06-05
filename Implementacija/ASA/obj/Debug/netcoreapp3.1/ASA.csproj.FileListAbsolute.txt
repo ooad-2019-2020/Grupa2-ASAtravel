@@ -760,11 +760,6 @@ C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreap
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Details.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Edit.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Putovanje\Index.cshtml.g.cs
-C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Create.cshtml.g.cs
-C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Delete.cshtml.g.cs
-C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Details.cshtml.g.cs
-C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Edit.cshtml.g.cs
-C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Index.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -781,3 +776,9 @@ C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreap
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.pdb
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\ASA.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Home\Prijava.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Create.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Delete.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Details.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Edit.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Index.cshtml.g.cs
+C:\Users\HP\source\repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Action.cshtml.g.cs

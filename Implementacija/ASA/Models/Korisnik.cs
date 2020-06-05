@@ -13,6 +13,8 @@ namespace authTest.Models
         [Display(Name = "Korisnik")]
         public int Id { get; set; }
         public string Username { get; set; }
+        [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         public int AgencijaId { get; set; }
         public virtual Agencija Agencija { get; set; }

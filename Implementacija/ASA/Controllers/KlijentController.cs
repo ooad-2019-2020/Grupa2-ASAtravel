@@ -48,8 +48,6 @@ namespace ASA.Controllers
         // GET: Klijent/Create
         public IActionResult Create()
         {
-            ViewData["AgencijaId"] = new SelectList(_context.Agencija, "Id", "Id");
-            ViewData["RacunId"] = new SelectList(_context.Racun, "Id", "Id");
             return View();
         }
 
@@ -58,22 +56,22 @@ namespace ASA.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Ime,Prezime,DatumRodjenja,MjestoStanovanja,Email,RacunId,Id,Username,Password,AgencijaId")] Klijent klijent)
+        public async Task<IActionResult> Create([Bind("Ime,Prezime,DatumRodjenja,MjestoStanovanja,Email,Id,Username,Password")] Klijent klijent)
         {
             if (ModelState.IsValid)
             {
+                klijent.AgencijaId = 1;
                 _context.Add(klijent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AgencijaId"] = new SelectList(_context.Agencija, "Id", "Id", klijent.AgencijaId);
-            ViewData["RacunId"] = new SelectList(_context.Racun, "Id", "Id", klijent.RacunId);
             return View(klijent);
         }
 
         // GET: Klijent/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
@@ -84,8 +82,6 @@ namespace ASA.Controllers
             {
                 return NotFound();
             }
-            ViewData["AgencijaId"] = new SelectList(_context.Agencija, "Id", "Id", klijent.AgencijaId);
-            ViewData["RacunId"] = new SelectList(_context.Racun, "Id", "Id", klijent.RacunId);
             return View(klijent);
         }
 
@@ -94,7 +90,7 @@ namespace ASA.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Ime,Prezime,DatumRodjenja,MjestoStanovanja,Email,RacunId,Id,Username,Password,AgencijaId")] Klijent klijent)
+        public async Task<IActionResult> Edit(int id, [Bind("Ime,Prezime,DatumRodjenja,MjestoStanovanja,Email,Id,Username,Password")] Klijent klijent)
         {
             if (id != klijent.Id)
             {
@@ -105,6 +101,7 @@ namespace ASA.Controllers
             {
                 try
                 {
+                    klijent.AgencijaId = 1;
                     _context.Update(klijent);
                     await _context.SaveChangesAsync();
                 }
@@ -121,8 +118,6 @@ namespace ASA.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AgencijaId"] = new SelectList(_context.Agencija, "Id", "Id", klijent.AgencijaId);
-            ViewData["RacunId"] = new SelectList(_context.Racun, "Id", "Id", klijent.RacunId);
             return View(klijent);
         }
 

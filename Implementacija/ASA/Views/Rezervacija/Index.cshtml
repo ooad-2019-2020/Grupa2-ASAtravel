@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Index</h1>
@@ -12,6 +13,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Klijent)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Putovanje)
             </th>
@@ -28,10 +32,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Putovanje.Destinacija)
+                @Html.DisplayFor(modelItem => item.Klijent.Ime)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Kod.Sifra)
+                @Html.DisplayFor(modelItem => item.Putovanje.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kod.Id)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cijena)

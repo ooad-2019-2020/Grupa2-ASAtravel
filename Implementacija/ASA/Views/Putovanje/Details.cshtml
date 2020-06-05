@@ -8,54 +8,36 @@
 
 <div>
     <hr />
-    <dl class="row"  style="margin-left:20%" >
-        <dt class="col-sm-4" >
+    <dl class="row" style="margin-left:20%">
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.Slika)
         </dt>
         <dd class="col-sm-10">
             <img src=@Html.DisplayFor(model => model.Slika) alt="Slika" width="400" height="300">
         </dd>
-        <dt class="col-sm-4" >
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.Destinacija)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Destinacija)
         </dd>
-        <dt class="col-sm-4" >
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.Info)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Info)
         </dd>
-        <dt class="col-sm-4" >
-            @Html.DisplayNameFor(model => model.Aktuelno)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Aktuelno)
-        </dd>
-        <dt class="col-sm-4" >
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.DatumPolaska)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DatumPolaska)
         </dd>
-        <dt class="col-sm-4" >
+        <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.DatumPovratka)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.DatumPovratka)
-        </dd>
-        <dt class="col-sm-4">
-            @Html.DisplayNameFor(model => model.MinBrojLjudi)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MinBrojLjudi)
-        </dd>
-        <dt class="col-sm-4" >
-            @Html.DisplayNameFor(model => model.MaxBrojLjudi)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MaxBrojLjudi)
         </dd>
         <dt class="col-sm-4">
             @Html.DisplayNameFor(model => model.Cijena)
@@ -63,7 +45,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Cijena)
         </dd>
+        <input type="button"
+               class="btn btn-info"
+               value="Rezerviši"
+               onclick="location.href='/Rezervacija/Create', model.Id"/>
     </dl>
+
 </div>
 <div>
     <a  style="margin-left: 21%" asp-action="Edit" asp-route-id="@Model.Id">Izmijeni</a> |
