@@ -815,3 +815,7 @@ C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Edit.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Index.cshtml.g.cs
 C:\Users\HP\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Klijent\Submit.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Home\Prijava.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Klijent\Submit.cshtml.g.cs
+C:\Users\user1\Source\Repos\Grupa2-ASAtravel\Implementacija\ASA\obj\Debug\netcoreapp3.1\Razor\Views\Rezervacija\Action.cshtml.g.cs
+C:\Users\user1\source\repos\Grupa2-ASAtravel\Implementacija\ASA\bin\Debug\netcoreapp3.1\web.config
