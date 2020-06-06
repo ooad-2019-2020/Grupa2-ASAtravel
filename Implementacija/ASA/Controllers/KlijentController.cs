@@ -63,9 +63,14 @@ namespace ASA.Controllers
                 klijent.AgencijaId = 1;
                 _context.Add(klijent);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Submit));
             }
             return View(klijent);
+        }
+
+        public async Task<IActionResult> Submit()
+        {
+            return View();
         }
 
         // GET: Klijent/Edit/5

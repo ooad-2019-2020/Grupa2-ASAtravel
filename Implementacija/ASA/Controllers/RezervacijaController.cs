@@ -12,7 +12,7 @@ namespace ASA.Controllers
     public class RezervacijaController : Controller
     {
         private readonly ASAContext _context;
-        private double c=0;
+        public static double c=0;
 
         public RezervacijaController(ASAContext context)
         {
@@ -77,7 +77,8 @@ namespace ASA.Controllers
                 {
                     rezervacija.Cijena = (put.Cijena * (1 - kod.Popust / 100.0));
                 }
-                
+
+                c = rezervacija.Cijena;
 
                 _context.Add(rezervacija);
                 await _context.SaveChangesAsync();
@@ -110,8 +111,8 @@ namespace ASA.Controllers
                 return NotFound();
             }
             ViewData["KlijentId"] = new SelectList(_context.Klijent, "Id", "Discriminator", rezervacija.KlijentId);
-            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id", rezervacija.KodId);
-            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id", rezervacija.PutovanjeId);
+            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Sifra", rezervacija.KodId);
+            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Destinacija", rezervacija.PutovanjeId);
             return View(rezervacija);
         }
 
@@ -148,8 +149,8 @@ namespace ASA.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["KlijentId"] = new SelectList(_context.Klijent, "Id", "Discriminator", rezervacija.KlijentId);
-            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Id", rezervacija.KodId);
-            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Id", rezervacija.PutovanjeId);
+            ViewData["KodId"] = new SelectList(_context.Kod, "Id", "Sifra", rezervacija.KodId);
+            ViewData["PutovanjeId"] = new SelectList(_context.Putovanje, "Id", "Destinacija", rezervacija.PutovanjeId);
             return View(rezervacija);
         }
 

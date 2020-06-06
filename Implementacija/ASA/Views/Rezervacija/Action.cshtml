@@ -5,7 +5,13 @@
 }
 
 
-<div>
-    <h4>Rezervacija</h4>
-    <p> Cijena vaše rezervacije je: @ViewBag.Suza</p>
-</div>
+    <div  style="margin-left:20%;">
+        <h4>Uspješno ste rezervisali</h4>
+        <p></p>
+        <p> Cijena vaše rezervacije je: @ViewBag.Suza KM</p>
+        <input type="button"
+               style="margin-left: 2%"
+               class="btn btn-info"
+               value="Ok"
+               onclick="location.href='/Putovanje/Index'" />
+    </div>
