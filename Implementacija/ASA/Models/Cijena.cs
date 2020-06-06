@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace authTest.Models
 {
-    public class Cijena
+    public class Cijena : IzracunCijene
     {
         public int Id { get; set; }
         public double PunaCijena { get; set; }
@@ -16,9 +16,18 @@ namespace authTest.Models
             PunaCijena = punaCijena;
             Akontacija = akontacija;
         }
-
         public Cijena()
         {
         }
+        public double dajCijenuSPopustom(double popust)
+        {
+            return popust * PunaCijena; 
+        }
+        public double dajPunuCijenu()
+        {
+            return PunaCijena;   
+
+        }
+
     }
 }

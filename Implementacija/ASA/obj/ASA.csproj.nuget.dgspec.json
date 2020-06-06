@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
         "projectName": "ASA",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\Grupa2-ASAtravel\\Implementacija\\ASA\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Grupa2-ASAtravel\\Implementacija\\ASA\\ASA.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Grupa2-ASAtravel\\Implementacija\\ASA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,12 +81,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -95,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

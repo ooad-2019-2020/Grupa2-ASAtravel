@@ -13,7 +13,7 @@ namespace ASA.Models
         public Prijava() { }
         public Korisnik provjera(string username, string pass)
         {
-            return null;
+            return 0; 
         } 
     }
 }
