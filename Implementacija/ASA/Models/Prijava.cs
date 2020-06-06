@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace ASA.Models
 {
-    public class Prijava
-    {
-        public static Prijava PrijaviSe { get; set; }
-
-        public Prijava() { }
-        public Korisnik provjera(string username, string pass)
+     
+        public class Prijava
         {
-            return 0; 
-        } 
+            private static ASAContext _context;
+            public static Prijava PrijaviSe { get; set; }
+
+            public Prijava(ASAContext context)
+            {
+                _context = context;
+            }
+            public Korisnik? provjera(string username, string password)
+            {
+                IQueryable<Korisnik> korisnici = _context.Korisnik.Where(k => k.Username == username && k.Password == password);
+                if (korisnici.Any())
+                {
+                    return korisnici.First();
+                }
+                return null;
+            }
+        }
     }
-}
+
+
