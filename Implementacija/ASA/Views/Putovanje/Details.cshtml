@@ -50,6 +50,14 @@
 
 </div>
 <div>
+    <script>
+function activatePlacesSearch(){
+	var input = document.getElementById(  @Html.DisplayFor(model => model.Destinacija));
+	var autocomplete = new google.maps.places.Autocomplete(input);}
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1q3Z3k2N7e14THEaABZtoA9bM0PF4cos&libraries=places&callback=activatePlacesSearch"></script>
+</div>
+<div>
     <a  style="margin-left: 21%" asp-action="Edit" asp-route-id="@Model.Id">Izmijeni</a> |
     <a  asp-action="Index">Vrati se na ponude</a>
 </div>

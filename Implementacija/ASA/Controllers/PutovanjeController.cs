@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using authTest.Models;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace ASA.Controllers
 {
@@ -21,7 +24,27 @@ namespace ASA.Controllers
         // GET: Putovanje
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Putovanje.ToListAsync());
+            string apiUrl = "https://asawebapi.azurewebsites.net";
+            List<Putovanje> putovanja = new List<Putovanje>();
+            using (var client = new HttpClient())
+            {
+                //Postavljanje adrese URL od web api servisa
+                client.BaseAddress = new Uri(apiUrl);
+                client.DefaultRequestHeaders.Clear();
+                //definisanje formata koji želimo prihvatiti
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                //Asinhrono slanje zahtjeva za podacima o studentima
+                HttpResponseMessage Res = await client.GetAsync("Putovanje");
+                //Provjera da li je rezultat uspješan
+                if (Res.IsSuccessStatusCode)
+                {
+                    //spremanje podataka dobijenih iz responsa
+                    var response = Res.Content.ReadAsStringAsync().Result;
+                putovanja =  JsonConvert.DeserializeObject<List<Putovanje>>(response);
+                }
+                return View(putovanja);
+            }
+
         }
 
         // GET: Putovanje/Details/5
